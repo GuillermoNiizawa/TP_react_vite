@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import SearchBar from './Componentes/SearchBar/SearchBar';
 import SearchResultsList from './Componentes/searchResultsList/SearchResultsList';
-import Popular from "./Componentes/Tendencias/Tendencias";
+import Tendencias from "./Componentes/Tendencias/Tendencias";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <SearchResultsList results={results} favoritos={favoritos} setFavoritos={setFavoritos} />
         )}
       </div>
-      <Popular />
+      <Tendencias />
 
     </>
   );
