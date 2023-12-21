@@ -1,0 +1,268 @@
+.seccion-tendencias {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease;
+}
+
+.titulo-tendencias {
+  width: 58%;
+  display: flex;
+  text-align: start;
+  line-height: 2.3rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, rgb(119, 118, 118), rgba(0, 0, 0, 0));
+  border-left: 5px solid #ffcc00;
+}
+
+.lista-tendencias {
+  margin-top: 20px;
+  display: flex;
+}
+
+.h2-titulo-tendencias {
+  margin-left: 10px;
+}
+
+.item-lista-tendencias {
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+
+}
+
+.item-lista-tendencias:hover {
+  transform: scale(1.1);
+
+}
+
+.lista-tendencia-img {
+  width: 200px;
+}
+
+.movie-container-img {
+  width: 200px;
+}
+
+.movie-name {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.item-lista-tendencias:hover .movie-name {
+  opacity: 1;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.btn-next,
+.btn-prev {
+  background-color: #b2b2b2a8;
+  color: white;
+  padding: 10px;
+  height: 50px;
+  width: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+
+}
+
+.btn-next:hover,
+.btn-prev:hover {
+  background-color: #555;
+
+}
+
+.btn-next {
+  margin-left: 10px;
+  position: absolute;
+  left: 550px;
+}
+
+.btn-prev {
+  margin-right: 10px;
+  position: absolute;
+  right: 550px;
+}
+
+.icono-tendencias {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-lista-tendencias:hover .icono-tendencias {
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .seccion-tendencias {
+    overflow: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .titulo-tendencias {
+    width: 98%;
+   
+  }
+
+  .lista-tendencias {
+    flex-wrap: wrap;
+  }
+
+ 
+  .item-lista-tendencias {
+    width: 48%;
+    margin: 1px;
+   /
+  }
+
+  .item-lista-tendencias:hover {
+    transform: none;
+
+  }
+
+  .lista-tendencia-img {
+    width: 100%;
+  }
+
+  .movie-name {
+    font-size: 1rem;
+    top: 60%;
+    height: 40%;
+    opacity: 1;
+  
+  }
+
+  .item-lista-tendencias:hover .movie-name {
+    opacity: 0;
+  }
+
+  .carousel-buttons {
+    display: none;
+  }
+
+  .btn-next,
+  .btn-prev {
+    display: none;
+  }
+
+  .btn-next:hover,
+  .btn-prev:hover {
+    display: none;
+  }
+
+  .btn-next {
+    display: none;
+  }
+
+  .btn-prev {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .seccion-tendencias {
+    height: 100%;
+    overflow: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .titulo-tendencias {
+    width: 96%;
+  }
+
+  .lista-tendencias {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item-lista-tendencias {
+    width: 19%;
+    margin: 1px;
+  }
+
+  .item-lista-tendencias:hover {
+    transform: none;
+  }
+
+  .lista-tendencia-img {
+    width: 100%;
+  }
+
+  .movie-name {
+    font-size: 1rem;
+    top: 60%;
+    height: 40%;
+    opacity: 1;
+  }
+
+  .item-lista-tendencias:hover .movie-name {
+    opacity: 0;
+  }
+
+  .carousel-buttons {
+    display: none;
+  }
+
+  .btn-next,
+  .btn-prev {
+    display: none;
+  }
+
+  .btn-next:hover,
+  .btn-prev:hover {
+    display: none;
+  }
+
+  .btn-next {
+    display: none;
+  }
+
+  .btn-prev {
+    display: none;
+  }
+}
